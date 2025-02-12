@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de cerradura inteligente con RFID y ESP32</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            background-color: #b0e0e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #d0eef2;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+            width: 85%;
+            text-align: left;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .image-container img {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .image-container a {
+            display: block;
+            font-size: 12px;
+            color: blue;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistema de cerradura inteligente con RFID y ESP32</h1>
+    </header>
+    
+    <div class="container">
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>La seguridad y el control de acceso son esenciales en diversos entornos. Este proyecto busca desarrollar una cerradura inteligente con ESP32 y RFID, permitiendo la apertura de puertas mediante tarjetas autorizadas y registrando los accesos en una base de datos para su monitoreo remoto.</p>
+        </section>
+        
+        <section id="objetivos">
+            <h2>Objetivo General</h2>
+            <p>Diseñar e implementar un sistema de cerradura inteligente con lector RFID y ESP32 para el control y monitoreo de accesos en un entorno determinado.</p>
+            <h3>Objetivos Específicos</h3>
+            <ul>
+                <li>Integrar un módulo RFID con un ESP32 para la identificación de usuarios autorizados.</li>
+                <li>Desarrollar un sistema de apertura de cerradura controlado por el ESP32 mediante un servomotor o relevador.</li>
+                <li>Implementar un sistema de almacenamiento de registros de acceso en una base de datos local o en la nube.</li>
+                <li>Diseñar una interfaz web o aplicación móvil para la gestión remota de accesos.</li>
+                <li>Evaluar la eficiencia y seguridad del sistema mediante pruebas en un entorno real.</li>
+            </ul>
+        </section>
+        
+        <section id="metodologia">
+            <h2>Metodología</h2>
+            <p><strong>Investigación y Diseño:</strong> Se estudiarán las tecnologías disponibles y se definirá la arquitectura del sistema.</p>
+            <p><strong>Selección de Componentes:</strong> Se determinarán los módulos electrónicos adecuados para la implementación.</p>
+            <p><strong>Desarrollo del Hardware:</strong> Se realizará el montaje del circuito con el ESP32, el módulo RFID y el sistema de cerradura.</p>
+            <p><strong>Desarrollo del Software:</strong> Se programará el ESP32 para la lectura de tarjetas RFID, el control de la cerradura y la comunicación con una base de datos.</p>
+            <p><strong>Pruebas y Ajustes:</strong> Se realizarán pruebas de funcionamiento, seguridad y confiabilidad.</p>
+            <p><strong>Implementación y Evaluación:</strong> Se instalará el sistema en un entorno de prueba para su evaluación y mejora.</p>
+        </section>
+        
+        <section id="materiales">
+            <h2>Materiales Utilizados</h2>
+            <ul>
+                <li>ESP32 <br> <img src="esp32.jpg" alt="ESP32" width="100"> <a href="https://www.aranacorp.com/es/crear-una-interfaz-web-para-controlar-su-esp32-nodemcu/" target="_blank">Fuente</a></li>
+                <li>Módulo RFID MFRC522 <br> <img src="RFID.jpg" alt="Módulo RFID" width="100"> <a href="https://parsek.com.co/modulo-inalambrico-rfid-mfrc522" target="_blank">Fuente</a></li>
+                <li>Tarjetas o llaveros RFID</li>
+                <li>Servomotor SG90 o relevador <br> <img src="servo.jpg" alt="Servomotor SG90" width="100"> <a href="https://sandorobotics.com.mx/producto/sg90/" target="_blank">Fuente</a></li>
+                <li>Módulo de comunicación WiFi para conexión con la nube (integrado en ESP32)</li>
+                <li>Software de programación (Arduino IDE, Firebase, Blynk u otra plataforma de gestión remota)</li>
+            </ul>
+        </section>
+        
+        <section id="resultados">
+            <h2>Resultados Esperados</h2>
+            <p>Se espera obtener un sistema funcional de cerradura inteligente que permita el acceso solo a personas autorizadas mediante tarjetas RFID. Además, el sistema deberá registrar los accesos en una base de datos y permitir la gestión remota de usuarios. La implementación de esta tecnología contribuirá a mejorar la seguridad y facilitar el control de accesos en diversos entornos, ofreciendo una alternativa eficiente y moderna a los sistemas tradicionales.</p>
+        </section>
+    </div>
+</body>
+</html>
